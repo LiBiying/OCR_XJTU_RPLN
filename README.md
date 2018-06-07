@@ -13,7 +13,7 @@
 ### 基础模型
 基础模型从论文《An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition》复现。论文链接：https://arxiv.org/abs/1507.05717<br>
 该模型是一个端到端的文字识别模型，由三部分构成：首先将处理之后的图片送入CNN，经过6层卷积提取特征，然后将特征图按照宽度不变，长度为1的形式作为序列输入双向LSTM进行学习，学习到的结果使用CTC结构化损失，反向传递调整网络参数。基础模型示意图见图1，基础模型结构见表1。
-![](https://github.com/LiBiying/OCR_XJTU_RPLN/raw/master网络结构.jpg)
+![](https://github.com/LiBiying/OCR_XJTU_RPLN/网络结构.jpg)
 ### 模型改进
 改：CRNN中CNN部分的通道数<br>
 改：激活函数<br>
