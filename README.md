@@ -17,6 +17,7 @@
 <div align=center><img width="300" height="400" src="https://github.com/LiBiying/OCR_XJTU_RPLN/raw/master/网络示意图.JPG"/></div><br>
 基础模型结构为：<br>
 <div align=center><img width="300" height="300" src="https://github.com/LiBiying/OCR_XJTU_RPLN/raw/master/网络结构.JPG"/></div><br>
+
 ### 模型改进
 在调参过程中，主要对基础模型进行了四方面调整。由于训练准确度始终比验证准确度高不少，判断出现了过拟合，因此改动主要围绕减小过拟合进行。<br>
 第一处是CRNN中CNN部分的通道数，原网络每层通道数[64,128,256,256,512,512,512]，改为[64,128,128,256,256,512,512]<br>
